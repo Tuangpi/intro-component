@@ -1,0 +1,263 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --gray-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: whitesmoke;
+  font-family: Poppins, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url(../images/bg-intro-mobile.png), linear-gradient(180deg, var(--red), var(--red));
+  background-repeat: repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png), linear-gradient(180deg, var(--red), var(--red));
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+@media screen and (min-width: 700px) {
+  main {
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+  }
+}
+
+.top__head {
+  font-weight: 700;
+  text-align: center;
+  margin: 5rem 0 2rem 0;
+}
+@media screen and (min-width: 700px) {
+  .top__head {
+    text-align: left;
+    margin-left: 6rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .top__head {
+    margin-left: 9rem;
+  }
+}
+.top__body {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 700px) {
+  .top__body {
+    text-align: left;
+    margin-left: 6rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .top__body {
+    text-align: left;
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .bottom {
+    margin-top: 3rem;
+    width: 120vw;
+  }
+}
+@media screen and (min-width: 970px) {
+  .bottom {
+    margin-top: 4rem;
+    width: 100vw;
+  }
+}
+.bottom__card {
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 970px) {
+  .bottom__card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 7rem;
+  }
+}
+
+.form {
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 5px rgba(50, 50, 50, 0.5);
+}
+@media screen and (min-width: 970px) {
+  .form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 7rem;
+  }
+}
+.form__group {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+}
+@media screen and (min-width: 970px) {
+  .form__group {
+    gap: 1rem;
+  }
+}
+
+input[type=email], input[type=text], input[type=password] {
+  width: 90%;
+  height: 3rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: 0.1px solid #ccc;
+}
+
+button {
+  width: 90%;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--green);
+}
+
+.terms {
+  text-align: center;
+  color: #999;
+  font-size: 0.6rem;
+  padding: 0.5rem 2rem 1.5rem 2rem;
+}
+.terms a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.fname {
+  position: absolute;
+  top: 2.7rem;
+  right: 2rem;
+  visibility: hidden;
+}
+@media screen and (min-width: 580px) {
+  .fname {
+    right: 3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .fname {
+    right: 1.5rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .fname {
+    right: 2rem;
+  }
+}
+
+.lname {
+  position: absolute;
+  top: 7.2rem;
+  right: 2rem;
+  visibility: hidden;
+}
+@media screen and (min-width: 580px) {
+  .lname {
+    right: 3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .lname {
+    right: 1.5rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .lname {
+    top: 8.2rem;
+    right: 2rem;
+  }
+}
+
+.email {
+  position: absolute;
+  top: 11.5rem;
+  right: 2rem;
+  visibility: hidden;
+}
+@media screen and (min-width: 580px) {
+  .email {
+    right: 3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .email {
+    right: 1.5rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .email {
+    top: 13.6rem;
+    right: 2rem;
+  }
+}
+
+.password {
+  position: absolute;
+  top: 16rem;
+  right: 2rem;
+  visibility: hidden;
+}
+@media screen and (min-width: 580px) {
+  .password {
+    right: 3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .password {
+    right: 1.5rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .password {
+    top: 19rem;
+    right: 2rem;
+  }
+}
+
+.form__fmessage, .form__lmessage, .form__emessage, .form__pmessage {
+  font-style: italic;
+  color: var(--red);
+  margin-left: auto;
+  margin-right: 1.5rem;
+  font-size: 10px;
+  margin-top: -0.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
