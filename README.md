@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/intro-component.png)
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Tuangpi/intro-component.git)
+- Live Site URL: [live site URL](https://tuangpi.github.io/intro-component.git)
 
 ## My process
 
