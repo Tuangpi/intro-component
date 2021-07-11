@@ -11,8 +11,8 @@ let lastName = document.querySelector('#lastName');
 let email_id = document.querySelector('#email')
 let password_id = document.querySelector('#password')
 let btn = document.querySelector('.btn');
-let regex = /[\w]+/;
-let em = /[@]/;
+let regex = /[\w]/;
+let em = /[\w][@][\w]/;
 
 btn.addEventListener('click',check);
 function check(e){
